@@ -17,6 +17,7 @@ new Vue({
 
         },
         open(){
+            this.$refs.audio.play();
             this.showLing = false;
             setTimeout(()=>{
                 this.showCard = true;
