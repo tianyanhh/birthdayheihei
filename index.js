@@ -4,7 +4,8 @@ new Vue({
         return{
           openTimer : null, 
           showLing:true,
-          happy:'xx生日快乐',
+          happy:'小张生日快乐',
+          showCard:false,
         }
     },
  
@@ -17,6 +18,9 @@ new Vue({
         },
         open(){
             this.showLing = false;
+            setTimeout(()=>{
+                this.showCard = true;
+            },10000)
             // console.log('hhhh')
             // this.openTimer = setTimeout(()=>{
             //     var div = document.getElementById("bir");
